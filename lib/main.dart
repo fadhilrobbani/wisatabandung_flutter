@@ -10,6 +10,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) => MaterialApp(
         title: 'Wisata Bandung',
         theme: ThemeData(),
-        home: const DetailScreen(),
+        home: DetailScreen(),
       );
 }

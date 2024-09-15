@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class DetailScreen extends StatelessWidget {
-  const DetailScreen({super.key});
+  DetailScreen({super.key});
+  final List<int> numberList = [1, 2, 3, 4, 5, 6, 7];
 
   @override
   Widget build(BuildContext context) {
@@ -48,6 +49,24 @@ class DetailScreen extends StatelessWidget {
                     ],
                   ),
                 ],
+              ),
+            ),
+            Container(
+              // margin: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(20),
+              child: const Text(
+                'Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak pernah sepi pengunjung. Selain karena letaknya strategis, kawasan ini juga menghadirkan nuansa wisata khas Eropa. Semua itu diterapkan dalam bentuk spot swafoto Instagramable.',
+                textAlign: TextAlign.justify,
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
+            ),
+            Container(
+              // margin: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(20),
+              child: const Text(
+                'Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak pernah sepi pengunjung. Selain karena letaknya strategis, kawasan ini juga menghadirkan nuansa wisata khas Eropa. Semua itu diterapkan dalam bentuk spot swafoto Instagramable.',
+                textAlign: TextAlign.justify,
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
             ),
             Container(
@@ -107,7 +126,7 @@ class DetailScreen extends StatelessWidget {
                   ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
