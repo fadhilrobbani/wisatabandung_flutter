@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -23,18 +23,16 @@ class DetailScreen extends StatelessWidget {
     return Scaffold(
         body: SafeArea(
       child: Column(
-
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
             margin: const EdgeInsets.all(15),
             child: const Text('Farm House Lembang',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.bold,
-            )
-          ),
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                )),
           ),
           Container(
             margin: const EdgeInsets.symmetric(vertical: 10),
@@ -67,12 +65,11 @@ class DetailScreen extends StatelessWidget {
           ),
           Container(
             // margin: EdgeInsets.all(10),
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             child: const Text(
               'Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak pernah sepi pengunjung. Selain karena letaknya strategis, kawasan ini juga menghadirkan nuansa wisata khas Eropa. Semua itu diterapkan dalam bentuk spot swafoto Instagramable.',
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              
             ),
           )
         ],
